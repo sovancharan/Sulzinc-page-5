@@ -1,0 +1,25 @@
+
+
+@media only screen and (max-width: 992px) {
+ 
+    .dono-comparar-outer{
+        display: none !important;
+  
+    }
+    #navbarNav {
+        position: absolute;
+        left: 0;
+        background: #fff;
+        padding: 1rem;
+        width: 100%;
+        top: 84%;
+        z-index: 999;
+        transition: 0.5s;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .dono-comparar-inner{
+        display: none !important;
+    }
+      }
