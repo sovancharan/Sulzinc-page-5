@@ -13,7 +13,7 @@
     background-image: url('../img/Fondo\ Morado.png');
     background-repeat:  no-repeat;
     background-size: 100% 100%;
-    padding-bottom: 11rem;
+    padding-bottom: 13rem;
    
 }
 .navbar-brand {
@@ -28,7 +28,7 @@
     width: 9rem ;
 }
 .Dondo-Comparar {
-    width: 40%;
+    width: 41%;
     padding-left: 4rem;
 }
 .Dondo-Comparar  li a{
@@ -74,9 +74,9 @@ padding: 1.7rem 3rem 1.5rem 3rem;
 
 .accordion-item {
    
-    margin-bottom: 2rem !important;
-    padding-top: 0.7rem !important;
-    padding-bottom: 0.5rem !important;
+    margin-bottom: 3rem !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.6rem !important;
     padding-left: 1rem !important;
     padding-right: 1rem !important;
     border: none !important;
@@ -103,3 +103,60 @@ padding: 1.7rem 3rem 1.5rem 3rem;
     background-color: white;
     box-shadow: none;
 }
+.accordion-body{
+    padding-bottom: 3rem !important;
+    padding: 1rem 2.25rem;
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    /* width: 1.25rem;
+    height: 1.25rem; */
+    margin-left: auto;
+    content: "+";
+    font-size: 2rem;
+    color: #863398;
+    font-weight: bolder;
+     background-image: none;
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+.accordion-button:not(.collapsed  )::after {
+    background-image: none;
+    content: "-";
+    /* transform: rotate(-180deg); */
+    align-items: center;
+    background-size: 1.25rem;
+    font-size: 2rem !important;
+    font-weight: bolder;
+    transition: transform .2s ease-in-out;
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+}
+
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    align-content: center;
+    align-items: baseline;
+}
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    padding: 1rem 2.25rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
+
